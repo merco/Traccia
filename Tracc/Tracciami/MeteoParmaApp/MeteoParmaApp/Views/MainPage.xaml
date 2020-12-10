@@ -1,0 +1,26 @@
+﻿  
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            xmlns:views="clr-namespace:TracciamiApp.Views"
+            x:Class="TracciamiApp.Views.MainPage">
+    <TabbedPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 30, 0, 0" Default="0, 0, 0, 0" />
+    </TabbedPage.Padding>
+    <views:TodayPage />
+    <!--<NavigationPage Title="Schedule" IconImageSource="schedule.png">
+        <x:Arguments>
+            <views:SchedulePage />
+        </x:Arguments>
+    </NavigationPage>
+    <views:SettingsPage />-->
+    <views:WrfPage Title="ANAG" IconImageSource="schedule.png"/>
+    <views:PageList Title="CTRL" IconImageSource="camera.png"/>
+
+    <views:PagePresenti Title="LISTA" IconImageSource="list.png"/>
+    <views:SettingsPage Title="INFO" IconImageSource="infos.png"/>
+    
+</TabbedPage>
+    

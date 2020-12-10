@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<core:MyContentPage  xmlns:core="clr-namespace:TracciamiApp.Core" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TracciamiApp.Views.PagePresenti">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblstat" HorizontalOptions="CenterAndExpand" FontSize="Medium" TextColor="Blue" Padding="0,30,0,0"></Label>
+            <ListView x:Name="lwadded" SelectionMode="None"  ItemTapped="lwadded_ItemTapped"></ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</core:MyContentPage>

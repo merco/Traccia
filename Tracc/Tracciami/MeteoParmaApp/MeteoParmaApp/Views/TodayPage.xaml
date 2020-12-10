@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<core:MyContentPage  xmlns:core="clr-namespace:TracciamiApp.Core" xmlns="http://xamarin.com/schemas/2014/forms"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:control="clr-namespace:TracciamiApp.Control"
+                     x:Class="TracciamiApp.Views.TodayPage"
+			 IconImageSource="today.png"
+			 Title="MENU">
+	<ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="30" BackgroundColor="White">
+            <control:AppBarFrame IsVisible="false" x:Name="frm" BorderColor="#2196F3" BackgroundColor="#2196F3" Padding="10" Margin="3" >
+                <Label x:Name="txtNow" FontSize="Title" TextColor="AntiqueWhite" IsVisible="false" HorizontalOptions="CenterAndExpand" Padding="0"></Label>
+            </control:AppBarFrame>
+
+            <Label Text="Campi da importare"></Label>
+            <Label Text="ID,Cognome,Nome,Località,Telefono,Gruppo,Tessera,ScadTessera,ScadVisita,TipoAtleta,Iscrizione,Anno,Cat"></Label>
+            <!--<Editor x:Name="txtcampi" Text="9,3,4,5,10,11,12,13"></Editor>-->
+            <Editor x:Name="txtcampi" Text="1,3,4,10,13,15,19,20,22,23,24,25,26"></Editor>
+            <!--<Label Text="Separatore CSV"></Label>
+            <Editor x:Name="txtsep" Text=";"></Editor>-->
+            <Button Text="Importa Anagrafica" Clicked="Button_Clicked"></Button>
+
+            
+
+
+            <Button Text="Esporta lista" x:Name="btnExp" IsVisible="false" Clicked="btnExp_Clicked"></Button>
+
+            <Label x:Name="msgLabel" FontSize="Large" HorizontalOptions="CenterAndExpand" TextColor="Blue" Padding="0,50,0,0" VerticalOptions="End"></Label>
+        </StackLayout>
+   
+  
+		
+			
+
+	</ContentPage.Content>
+</core:MyContentPage>

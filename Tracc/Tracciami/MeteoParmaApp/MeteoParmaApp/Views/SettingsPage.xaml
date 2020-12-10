@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<core:MyContentPage  xmlns:core="clr-namespace:TracciamiApp.Core"
+                     xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TracciamiApp.Control"
+                     x:Class="TracciamiApp.Views.SettingsPage" IconImageSource="settings.png" Title="Settings">
+	<ContentPage.Content>
+		<StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="0">
+
+
+            <Label Text="Versione 1.2" HorizontalOptions="CenterAndExpand"  FontSize="Large" />
+
+            <Label Text="Realizzata da" HorizontalOptions="CenterAndExpand"  FontSize="Large" />
+            <Label Text="Davide Mercanti" HorizontalOptions="CenterAndExpand" FontSize="Large" />
+            <Label Text="d.mercanti@gmail.com" HorizontalOptions="CenterAndExpand"  FontSize="Large" TextColor="Blue">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped_1" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Text="Vai al PlayStore" HorizontalOptions="CenterAndExpand"  FontSize="Large" TextColor="Blue">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1"  Tapped="TapGestureRecognizer_Tapped_2" />
+                </Label.GestureRecognizers>
+            </Label>
+
+          
+        </StackLayout>
+	</ContentPage.Content>
+</core:MyContentPage>

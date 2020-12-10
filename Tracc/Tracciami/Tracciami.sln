@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracciamiApp.Android", "MeteoParmaApp\MeteoParmaApp.Android\TracciamiApp.Android.csproj", "{7FB2C2C7-4996-4EAD-9524-110717EC6212}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TracciamiApp", "MeteoParmaApp\MeteoParmaApp\TracciamiApp.csproj", "{28F618B6-1984-4F3F-A934-499F51D67728}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FB2C2C7-4996-4EAD-9524-110717EC6212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB2C2C7-4996-4EAD-9524-110717EC6212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB2C2C7-4996-4EAD-9524-110717EC6212}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7FB2C2C7-4996-4EAD-9524-110717EC6212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB2C2C7-4996-4EAD-9524-110717EC6212}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB2C2C7-4996-4EAD-9524-110717EC6212}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{28F618B6-1984-4F3F-A934-499F51D67728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F618B6-1984-4F3F-A934-499F51D67728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F618B6-1984-4F3F-A934-499F51D67728}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{28F618B6-1984-4F3F-A934-499F51D67728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F618B6-1984-4F3F-A934-499F51D67728}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F618B6-1984-4F3F-A934-499F51D67728}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E597855A-3FE3-465C-AE4D-93B093ED0891}
+	EndGlobalSection
+EndGlobal

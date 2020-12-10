@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<core:MyContentPage  xmlns:core="clr-namespace:TracciamiApp.Core" 
+                     xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:TracciamiApp.Control"
+                     mc:Ignorable="d"
+             x:Class="TracciamiApp.Views.WrfPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <ListView x:Name="mainLW" SelectionMode="None" HorizontalScrollBarVisibility="Never" HasUnevenRows="True" ItemTapped="mainLW_ItemTapped"></ListView>
+
+            <ScrollView IsVisible="false" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="dett" Padding="10,30,10,10" >
+                <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  x:Name="gr">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.25*" />
+                        <ColumnDefinition Width="0.75*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+
+                    </Grid.RowDefinitions>
+                    <!--ID,Cognome,Nome,Località,Telefono,Gruppo,Tessera,ScadTessera,ScadVisita,TipoAtleta,Iscrizione,Anno,Cat-->
+                    <Button  Text="Elimina" x:Name="btnEli"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Clicked="btnEli_Clicked" IsEnabled="False"></Button>
+                    <Label Grid.Column="0" Grid.Row="1" Text="ID" VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="1"  Text="{Binding Id}" Keyboard="Numeric" ></Entry>
+                    
+                    <Label Grid.Column="0" Grid.Row="2" Text="Cognome"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="2"  Text="{Binding Cognome}" ></Entry>
+                    
+                    <Label Grid.Column="0" Grid.Row="3" Text="Nome"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="3"  Text="{Binding Nome}" ></Entry>
+                    
+                    <Label Grid.Column="0" Grid.Row="4" Text="Località"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="4" Text="{Binding Localita}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="5" Text="Tel"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="5" Text="{Binding Tel}" Keyboard="Telephone"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="6" Text="Gruppo"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="6" Text="{Binding Gruppo}" ></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="7" Text="Tessera"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="7" Text="{Binding Tessera}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="8" Text="ScadTessera"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="8" Text="{Binding ScadTessera}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="9" Text="ScadVisita"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="9" Text="{Binding ScadVisita}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="10" Text="TipoAtleta"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="10" Text="{Binding TipoAtleta}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="11" Text="Iscrizione"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="11" Text="{Binding Iscrizione}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="12" Text="Anno"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="12" Text="{Binding Anno}"></Entry>
+
+                    <Label Grid.Column="0" Grid.Row="13" Text="Cat"  VerticalTextAlignment="Center"></Label>
+                    <Entry Grid.Column="1" Grid.Row="13" Text="{Binding Cat}"></Entry>
+                </Grid>
+                
+            </ScrollView>
+
+
+            <Button  Text="AGGIUNGI" x:Name="btnAdd" Clicked="btnAdd_Clicked" VerticalOptions="End"></Button>
+            <Button  Text="SALVA" x:Name="btnSave" Clicked="btnSave_Clicked" IsVisible="false"></Button>
+
+        </StackLayout>
+        
+  </ContentPage.Content>
+</core:MyContentPage>

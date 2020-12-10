@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<core:MyContentPage  xmlns:core="clr-namespace:TracciamiApp.Core" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     x:Class="TracciamiApp.Views.PageList">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="20">
+            <Button Text="Nuova Registrazione" x:Name="btnNew"  Clicked="btnNew_Clicked"></Button>
+            <Label Text="Nessuna registrazione" x:Name="lblStat" HorizontalOptions="CenterAndExpand"   FontSize="Large" FontAttributes="Bold" TextColor="Red"></Label>
+
+            <Entry x:Name="txtfilter" Placeholder="ricerca..." IsSpellCheckEnabled="False" TextChanged="txtfilter_TextChanged"></Entry>
+
+            <ListView x:Name="lwric" ItemTapped="lwric_ItemTapped" SelectionMode="None" VerticalOptions="FillAndExpand"></ListView>
+
+
+           
+
+            <Button Text="SCAN !" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" x:Name="btnBarcode" Clicked="btnBarcode_Clicked" ></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</core:MyContentPage>
